@@ -32,8 +32,8 @@ def version_changes():
                     nversion = line[3]
                     ndate = line[4] + ' ' + line[5] + ' ' + line[6]
                     print(nversion + ' ' + ndate)
-            if security in line:
-                print(nversion + ' had a security update')
+                if security in line:
+                    print(nversion + ' had a security update')
 
 def main():
     write_log()
