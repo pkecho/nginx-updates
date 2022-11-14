@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-__author__ = 'pk31337'
+__author__ = 'pkecho'
 __version__ = '1.0.1'
-__maintainer__ = 'pk31337'
+__maintainer__ = 'pkecho'
 __status__ = 'Development'
 
 from bs4 import BeautifulSoup
