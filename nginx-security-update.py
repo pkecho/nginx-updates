@@ -10,12 +10,13 @@ from datetime import date
 import requests
 import os
 
-changes = 'Changes with nginx'
-security = 'Security:'
 source = requests.get('http://nginx.org/en/CHANGES').text
 soup = BeautifulSoup(source, 'lxml')
 logs = soup.body.p.text
 year = date.today().year
+
+changes = 'Changes with nginx'
+security = 'Security:'
 
 
 def write_log():
